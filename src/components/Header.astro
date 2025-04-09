@@ -1,7 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-
 import ThemeIcon from "./ThemeIcon.astro";
+import Icon from '../icons/icon.png';
 ---
 
 <header
@@ -13,7 +14,8 @@ import ThemeIcon from "./ThemeIcon.astro";
     >
       <a class="font-semibold text-xl flex gap-2 items-center group" href="/">
         <!-- <Icon name="icon" class="w-5 h-5 group-hover:rotate-[180deg]" /> -->
-        <img src="icon.png" class="w-7 h-7 group-hover:rotate-[180deg]" />
+        <!-- <img src="icon.png" class="w-7 h-7 group-hover:rotate-[180deg]" /> -->
+        <Image src={Icon} alt="" class="w-7 h-7 group-hover:rotate-[180deg]"/>
         ADB
       </a>
       <div class="lg:hidden flex items-center justify-center gap-4">
