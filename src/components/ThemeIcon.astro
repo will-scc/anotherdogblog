@@ -39,10 +39,10 @@ const props = Astro.props
     border-radius: 8px;
     background: linear-gradient(
       to right,
-      #473d8a 0%,
-      hsl(248, 39%, 49%) 8%,
-      hsl(248, 39%, 39%) 92%,
-      hsl(248, 39%, 29%) 100%
+      hsl(205, 39%, 39%) 0%,
+      hsl(205, 39%, 49%) 8%,
+      hsl(205, 39%, 39%) 92%,
+      hsl(205, 39%, 29%) 100%
     );
     /* background: linear-gradient(
       to right,
@@ -57,7 +57,7 @@ const props = Astro.props
     display: block;
     position: relative;
     border-radius: 8px;
-    background: hsl(248, 53%, 58%);
+    background: hsl(205, 99%, 48%);
     padding: 8px 12px;
     color: white;
     font-weight: 600;
@@ -103,13 +103,11 @@ const props = Astro.props
   <span class="front">
     <Icon name="radix-icons:sun" class="w-4 h-4 flex dark:hidden" />
     <Icon name="radix-icons:moon" class="w-4 h-4 dark:flex hidden" />
-
   </span>
 </button>
 
 <script >
-  // document.addEventListener('astro:page-load', () => {
-    const buttons = document.querySelectorAll('.switch-theme-button'); 
+  const buttons = document.querySelectorAll('.switch-theme-button'); 
   buttons.forEach((button) => {
     button.addEventListener('click', () => {
       if (localStorage.theme === 'dark') {
@@ -121,6 +119,4 @@ const props = Astro.props
       }
     })
   });
-// });
-  
 </script>
