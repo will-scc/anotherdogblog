@@ -2,7 +2,7 @@
 title: 'Exploring Technology Trends'
 description: 'An overview of the latest innovations in technology'
 pubDate: 'Jun 15 2024'
-heroImage: ''
+#heroImage: ''
 tags: ['technology', 'innovation']
 ---
 
